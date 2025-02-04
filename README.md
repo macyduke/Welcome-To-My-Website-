@@ -1,2 +1,2 @@
-# my-first-repository
-group 3's first project 
+Macy's Project 
+Chapter 4 Assignment
