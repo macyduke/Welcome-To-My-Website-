@@ -1,0 +1,41 @@
+modExercise7.css
+footer {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    color: darkblue;
+    padding: 10px;
+    border: 1px dashed darkblue;
+}
+
+/* Notice ID */
+#notice {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Headline class with dotted underline */
+.headline {
+    color: #4A90E2; /* Choose your preferred color */
+    border-bottom: 2px dotted #4A90E2;
+}
+
+/* h1 with drop shadow and transparency */
+h1 {
+    font-size: 4em;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent */
+    padding: 10px;
+}
+
+/* Section ID styles */
+#section {
+    font-size: small;
+    color: red;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    width: 80%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
