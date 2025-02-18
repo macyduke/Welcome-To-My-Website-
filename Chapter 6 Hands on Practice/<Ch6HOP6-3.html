@@ -1,0 +1,41 @@
+<Ch6HOP6-3.html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOP 6.3: Float Properties</title>
+    <style>
+        .left {
+            float: left;
+            width: 45%;
+            margin-right: 10%;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        
+        .right {
+            float: right;
+            width: 45%;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        /* Clearfix to prevent overlapping */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="left">
+            This content floats to the left.
+        </div>
+        <div class="right">
+            This content floats to the right.
+        </div>
+    </div>
+</body>
+</html>
