@@ -1,0 +1,51 @@
+<form4.html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <style>
+        fieldset {
+            width: 320px;
+            border: 2px ridge #FF0000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        legend {
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: bold;
+        }
+        label {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <!-- First Name -->
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname"><br><br>
+
+            <!-- Last Name -->
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname"><br><br>
+
+            <!-- E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email"><br><br>
+        </fieldset>
+
+        <!-- Comments -->
+        <label for="comments">Comments:</label><br>
+        <textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

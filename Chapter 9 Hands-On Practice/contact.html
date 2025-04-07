@@ -1,0 +1,113 @@
+<contact.html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: #EAEAEA;
+            font-family: Arial, sans-serif;
+            width: 350px;
+            padding: 10px;
+        }
+
+        fieldset {
+            border: 2px ridge #FF0000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        legend {
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: bold;
+        }
+
+        label {
+            float: left;
+            clear: left;
+            display: block;
+            width: 100px;
+            padding-right: 10px;
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        input {
+            display: block;
+            margin-top: 10px;
+        }
+
+        textarea {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            margin-left: 110px;
+        }
+
+        /* CSS Grid layout if supported */
+        @supports (display: grid) {
+            form {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: 6em 1fr;
+                grid-gap: 1em;
+                gap: 1em;
+                background-color: #EAEAEA;
+                font-family: Arial, sans-serif;
+                width: 60%;
+                min-width: 20em;
+                padding: 1.5em;
+            }
+
+            label {
+                float: none;
+                clear: none;
+                display: block;
+                text-align: right;
+                padding-right: 0;
+                margin-top: 0;
+            }
+
+            input, textarea {
+                display: block;
+                margin-top: 0;
+            }
+
+            input[type="submit"] {
+                grid-column: 2 / 3;
+                width: 10em;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname">
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<form5.html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: #EAEAEA;
+            font-family: Arial, sans-serif;
+            width: 350px;
+            padding: 10px;
+        }
+
+        fieldset {
+            border: 2px ridge #FF0000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        legend {
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: bold;
+        }
+
+        label {
+            float: left;
+            clear: left;
+            display: block;
+            width: 100px;
+            padding-right: 10px;
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        input {
+            display: block;
+            margin-top: 10px;
+        }
+
+        textarea {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            margin-left: 110px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname">
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
