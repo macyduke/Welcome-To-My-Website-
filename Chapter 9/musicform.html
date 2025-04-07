@@ -1,0 +1,139 @@
+<musicform.html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select,
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Music Survey</h1>
+
+    <form action="#" method="post">
+
+        <!-- Name and Email -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">E-mail Address:</label>
+        <input type="email" name="email" id="email" required>
+
+        <!-- Scrolling Text Box -->
+        <label for="comments">Why do you like music?</label>
+        <textarea name="comments" id="comments" rows="3" cols="60" placeholder="Your answer here..."></textarea>
+
+        <!-- Radio Buttons with Fieldset -->
+        <fieldset>
+            <legend>How often do you listen to music?</legend>
+            <input type="radio" name="frequency" value="daily" id="daily">
+            <label for="daily">Daily</label><br>
+
+            <input type="radio" name="frequency" value="weekly" id="weekly">
+            <label for="weekly">Weekly</label><br>
+
+            <input type="radio" name="frequency" value="occasionally" id="occasionally">
+            <label for="occasionally">Occasionally</label>
+        </fieldset>
+
+        <!-- Select Box -->
+        <label for="genre">Favorite Genre:</label>
+        <select name="genre" id="genre" size="3">
+            <option value="pop">Pop</option>
+            <option value="rock">Rock</option>
+            <option value="jazz">Jazz</option>
+            <option value="hiphop">Hip-Hop</option>
+        </select>
+
+        <!-- Date Input -->
+        <label for="musicdate">What date did you last listen to music?</label>
+        <input type="date" name="musicdate" id="musicdate">
+
+        <!-- Submit and Reset Buttons -->
+        <div class="button-group">
+            <input type="submit" value="Submit Survey">
+            <input type="reset" value="Reset Form">
+        </div>
+
+    </form>
+
+    <div class="footer">
+        <p>Created by Macy Duke | Email: dukems@mail.lipscomb.edu</p>
+    </div>
+
+</body>
+</html>
